@@ -1,4 +1,7 @@
 class Record < ApplicationRecord
-  belongs_to :artist
+
+  validates :title, :year, presence: true
+
+  # belongs_to :artist
   belongs_to :user
 end
